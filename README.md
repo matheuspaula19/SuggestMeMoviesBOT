@@ -24,7 +24,7 @@ Bot that can recommend any random movie to watch based on genre, year, category 
 	<li>/sbc &lt;Person Name&gt; - suggestion by cast member name</li>
 	<li>/sbd &lt;Person Name&gt; - suggestion by director name</li>
 	<li>/sbr &lt;Value between 0-9&gt; - suggestion by rating</li>
-	<li>/sby &ltS;tart year&gt; - suggestion by decade (year + 10 years)</li>
+	<li>/sby &lt;Start year&gt; - suggestion by decade (year + 10 years)</li>
 	<li>/sbg (short for /suggestByGenre)</li>
 </ul>
 <h1>Prints</h1>
