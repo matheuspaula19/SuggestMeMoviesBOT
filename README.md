@@ -11,11 +11,11 @@ Bot that can recommend any random movie to watch based on genre, year, category 
 	<li>/suggestMe – List of buttons with the following commands:</li>
 	<li>
 		<ul>
-			<li>/suggestByGenre</ul>
-			<li>/suggestByDecade</ul>
-			<li>/suggestByRating</ul>
-			<li>/suggestByDirector</ul>
-			<li>/suggestAnything</ul>
+			<li>/suggestByGenre</li>
+			<li>/suggestByDecade</li>
+			<li>/suggestByRating</li>
+			<li>/suggestByDirector</li>
+			<li>/suggestAnything</li>
 		</ul>
 	</li>
 </ul>
