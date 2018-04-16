@@ -1,20 +1,19 @@
 # SuggestMeMoviesBOT
 Bot that can reccomend any random movie to watch based on genre, year, category and more.
-![Alt text](prints/telaInicial.png?raw=true "Initial Screen")
-![Alt text](prints/available_actions.png?raw=true "Available Actions")
-![Alt text](prints/available_commands.png?raw=true "Available Commands")
-![Alt text](prints/getting_suggestion_by_cast.png?raw=true "Getting Suggstion by Cast")
-![Alt text](prints/getting_suggestion_by_decade.png?raw=true "Getting Suggstion by Decade")
-![Alt text](prints/getting_suggestion_by_director.png?raw=true "Getting Suggstion by Director")
-![Alt text](prints/getting_suggestion_by_genre.png?raw=true "Getting Suggstion by Genre")
-![Alt text](prints/getting_suggestion_by_rating.png?raw=true "Getting Suggstion by Rating")
-![Alt text](prints/help_command.png?raw=true "Help Command")
-![Alt text](prints/inline_search.png?raw=true "Inline Search")
-![Alt text](prints/inline_search_result.png?raw=true "Inline Search Result")
-![Alt text](prints/start_command.png?raw=true "Start Command")
-![Alt text](prints/suggestion_by_cast.png?raw=true "Suggestion by Cast")
-![Alt text](prints/suggestion_by_decade.png?raw=true "Suggestion by Decade")
-![Alt text](prints/suggestion_by_director.png?raw=true "Suggestion by Director")
-![Alt text](prints/suggestion_by_genre.png?raw=true "Suggestion by Genre")
-![Alt text](prints/suggestion_by_rating.png?raw=true "Suggestion by Rating")
-
+<img src="prints/telaInicial.png?raw=true" width="350"/>
+<img src="prints/available_actions.png?raw=true" width="350"/>
+<img src="prints/available_commands.png?raw=true" width="350"/>
+<img src="prints/getting_suggestion_by_cast.png?raw=true" width="350"/>
+<img src="prints/getting_suggestion_by_decade.png?raw=true" width="350"/>
+<img src="prints/getting_suggestion_by_director.png?raw=true" width="350"/>
+<img src="prints/getting_suggestion_by_genre.png?raw=true" width="350"/>
+<img src="prints/getting_suggestion_by_rating.png?raw=true" width="350"/>
+<img src="prints/help_command.png?raw=true" width="350"/>
+<img src="prints/inline_search.png?raw=true" width="350"/>
+<img src="prints/inline_search_result.png?raw=true" width="350"/>
+<img src="prints/start_command.png?raw=true" width="350"/>
+<img src="prints/suggestion_by_cast.png?raw=true" width="350"/>
+<img src="prints/suggestion_by_decade.png?raw=true" width="350"/>
+<img src="prints/suggestion_by_director.png?raw=true" width="350"/>
+<img src="prints/suggestion_by_genre.png?raw=true" width="350"/>
+<img src="prints/suggestion_by_rating.png?raw=true" width="350"/>
