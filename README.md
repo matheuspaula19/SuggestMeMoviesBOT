@@ -5,65 +5,28 @@ Bot that can recommend any random movie to watch based on genre, year, category 
   <img src="diagram/SuggestMeMovies_BOT_diagram.png?raw=true"/>
 </p>
 <h1>Main commands list</h1>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/start - First use text</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/help - Help text</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/suggestMe – List of buttons with the following
-commands:</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
-lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span><span lang=EN-US>/suggestByGenre</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
-lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span><span lang=EN-US>/suggestByDecade</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
-lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span><span lang=EN-US>/suggestByRating</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
-lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span><span lang=EN-US>/suggestByDirector</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
-lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span><span lang=EN-US>/suggestAnything</span></p>
-
+<ul>
+	<li>/start - First use text</li>
+	<li>/help - Help text</li>
+	<li>/suggestMe – List of buttons with the following commands:</li>
+	<li>
+		<ul>
+			<li>/suggestByGenre</ul>
+			<li>/suggestByDecade</ul>
+			<li>/suggestByRating</ul>
+			<li>/suggestByDirector</ul>
+			<li>/suggestAnything</ul>
+		</ul>
+	</li>
+</ul>
 <h1>Specific commands list</h1>
-
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/sbc &lt;Person Name&gt; - suggestion by cast member
-name</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/sbd &lt;Person Name&gt; - suggestion by
-director name</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/sbr &lt;Value between 0-9&gt; - suggestion by
-rating</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/sby &lt;Start year&gt; - suggestion by decade
-(year + 10 years)</span></p>
-
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>/sbg (short for /suggestByGenre)</span></p>
-
+<ul>
+	<li>/sbc <Person Name> - suggestion by cast member name</li>
+	<li>/sbd <Person Name> - suggestion by director name</li>
+	<li>/sbr <Value between 0-9> - suggestion by rating</li>
+	<li>/sby <Start year> - suggestion by decade (year + 10 years)</li>
+	<li>/sbg (short for /suggestByGenre)</li>
+</ul>
 <h1>Prints</h1>
 <p align="center">
   <img src="prints/telaInicial.png?raw=true" width="350"/>
