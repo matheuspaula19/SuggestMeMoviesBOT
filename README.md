@@ -1,7 +1,7 @@
 # SuggestMeMoviesBOT
 Bot that can reccomend any random movie to watch based on genre, year, category and more.
 <h1>Prints</h1>
-<p style='text-align:center'>
+<p align="center">
   <img src="prints/telaInicial.png?raw=true" width="350"/>
   <img src="prints/start_command.png?raw=true" width="350"/>
   <img src="prints/help_command.png?raw=true" width="350"/>
