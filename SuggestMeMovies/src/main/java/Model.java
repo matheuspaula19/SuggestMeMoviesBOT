@@ -20,7 +20,7 @@ public class Model implements Subject{
 	
 	
 	public static String getToken() {
-		return "508952083:AAHlAuJm1gLOnjKmqvN29NlUsC92MQLDnIo";
+		return "Telegram-token";
 	}
 	
 	public static Model getInstance(){
