@@ -118,7 +118,7 @@ public class Model implements Subject{
 	}
 	
 	public static String getToken() {
-		return "508952083:AAE_eV8Wts_vOpUr-AdVetDl3auZxKUHHAo";
+		return "token";
 	}
 	
 	public static Model getInstance(){
