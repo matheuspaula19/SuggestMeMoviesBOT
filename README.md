@@ -46,5 +46,10 @@ Bot that can recommend any random movie to watch based on genre, year, category 
   <img src="prints/suggestion_by_decade.png?raw=true" width="350"/>
   <img src="prints/inline_search.png?raw=true" width="350"/>
   <img src="prints/inline_search_result.png?raw=true" width="350"/>
+  <img src="prints/add_to_Favorites_option.png?raw=true" width="350"/>
+  <img src="prints/adding_to_Favorites.png?raw=true" width="350"/>
+  <img src="prints/favorites_list.png?raw=true" width="350"/>
+  <img src="prints/favorite_details.png?raw=true" width="350"/>
+  <img src="prints/removing_favorite.png?raw=true" width="350"/>
 </p>
 
