@@ -5,6 +5,6 @@ public interface Subject {
 	
 	public void registerObserver(Observer observer);
 	
-	public void notifyObservers(long chatId, String responseData, String responseImage, List<Map<String, String>> queryResult);
+	public void notifyObservers(long chatId, String responseData, String responseImage, String responseItem, List<Map<String, String>> queryResult);
 
 }

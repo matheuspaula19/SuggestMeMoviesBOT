@@ -2,7 +2,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
+import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.jsoup.Jsoup;
@@ -15,10 +17,10 @@ import com.pengrad.telegrambot.model.Update;
 public class Connection {
 	
 	private Model model;
+	private ResourceBundle messages = ResourceBundle.getBundle("locales.LabelsBundle",new Locale("en", "US"));;	
 	private String imdbDomain = "http://www.imdb.com";
 	private String imdbSearch = "/search/title?adult=include&title_type=feature,tv_movie,documentary,short&title=";
 	private String suggestDomain = "http://www.suggestmemovie.com";
-	private String tryAgainMsg = "Unable to request data now, try again later!";
 	private String noImg = "https://s-media-cache-ak0.pinimg.com/236x/f3/5a/d9/f35ad9427be01af5955e6a6ce803f5dc--artist-list-top-artists.jpg";
 	
 	//constructor
@@ -37,7 +39,7 @@ public class Connection {
 		try {
 			doc = Jsoup.connect(url).header("Accept-Language", "en").post();
 		} catch (IOException e) {
-			model.notifyObservers(update.message().chat().id(), tryAgainMsg,"",null);
+			model.notifyObservers(update.message().chat().id(), messages.getString("tryagainmsg"),"","",null);
 		}
 		
 		//scrapping
@@ -86,7 +88,7 @@ public class Connection {
 				try {
 					data.put("genre", e.select("p.text-muted span.genre").text());
 				}catch(Exception ex){
-					data.put("genre","Unknown");
+					data.put("genre",messages.getString("unknow"));
 				}
 				
 				//runtime
@@ -103,7 +105,7 @@ public class Connection {
 						data.put("synopsis", "");
 					}
 				}catch(Exception ex){
-					data.put("synopsis","Unknown");
+					data.put("synopsis",messages.getString("unknow"));
 				}
 
 				//director and cast
@@ -120,8 +122,8 @@ public class Connection {
 						}
 					}
 				}catch(Exception ex){
-					data.put("cast","Unknown");
-					data.put("director","Unknown");
+					data.put("cast",messages.getString("unknow"));
+					data.put("director",messages.getString("unknow"));
 				}
 				
 				//poster
@@ -134,7 +136,7 @@ public class Connection {
 				queryResults.add(data);
 			}
 			//show results to user
-			model.notifyObservers(Long.valueOf(update.inlineQuery().id()), "","",queryResults);	
+			model.notifyObservers(Long.valueOf(update.inlineQuery().id()), "","","",queryResults);	
 		}
 	}
 		
@@ -167,13 +169,13 @@ public class Connection {
 	                    .data(postData)	
 						.post();
 			} catch (IOException e) {
-				model.notifyObservers(chatId, tryAgainMsg,"",null);
+				model.notifyObservers(chatId, messages.getString("tryagainmsg"),"","",null);
 			}
 		}else {
 			try {
 				doc = Jsoup.connect(suggestDomain).get();
 			} catch (IOException e) {
-				model.notifyObservers(chatId, tryAgainMsg,"",null);
+				model.notifyObservers(chatId, messages.getString("tryagainmsg"),"","",null);
 			}
 		}
 		
@@ -212,6 +214,14 @@ public class Connection {
 				data.put("imdbUrl", imdbDomain);
 			}
 			
+			//id
+			try {
+				data.put("id", data.get("imdbUrl").replaceFirst(".*/([^/?]+).*", "$1"));
+			}catch(Exception ex){
+				data.put("id", "");
+			}
+			
+			
 			//genre
 			try{
 				String g = doc.select(".boxcontainer2 .movie-tell div").get(1).text().replaceAll(" ,",", ").split(":")[1].toString();
@@ -245,7 +255,7 @@ public class Connection {
 			
 			//trailer
 			try{
-				data.put("trailer", doc.select("div.video iframe").attr("src").toString());
+				data.put("trailer", doc.select("div.video iframe").attr("src").toString().replace("//www","https://www"));
 			}catch(Exception ex){
 				data.put("trailer", "");
 			}
