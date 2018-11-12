@@ -30,7 +30,6 @@ Bot that can recommend any random movie to watch based on genre, year, category 
 </ul>
 <h1>Prints</h1>
 <p align="center">
-  <img src="prints/telaInicial.png?raw=true" width="350"/>
   <img src="prints/start_command.png?raw=true" width="350"/>
   <img src="prints/help_command.png?raw=true" width="350"/>
   <img src="prints/available_actions.png?raw=true" width="350"/>
